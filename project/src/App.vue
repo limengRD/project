@@ -1,28 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+      <top></top> 
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-
+import Top from './components/Top' 
 export default {
   name: 'app',
   components: {
-    Hello
+     Top  
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd.form.fieldset,legend,input,textarea,select{margin:0;padding:0;}
+a{text-decoration:none;}
+li{list-style:none;}
 </style>
