@@ -1,16 +1,22 @@
 <template>
   <div id="app">
       <top></top> 
+      <shopping-cart></shopping-cart>
+      <foot></foot>
   </div>
 </template>
 
 <script>
 import Top from './components/Top' 
+import ShoppingCart from './components/ShoppingCart'
+import Foot from './components/Foot'
 export default {
-  name: 'app',
-  components: {
-     Top  
-  }
+    name: 'app',
+    components: {
+        Top,
+        ShoppingCart,
+        Foot
+    }
 }
 </script>
 

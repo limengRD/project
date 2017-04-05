@@ -9,5 +9,15 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App }
-})
+  components: { App },
+  mounted:function(){
+                this.cartView();
+            },
+  methods:{
+            cartView:function(){
+                this.$http.get("git/project/cartDate.json").then(function(res){
+
+                        });
+            }
+        }
+}) 
