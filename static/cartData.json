@@ -1,6 +1,6 @@
 {
     "status":1,
-    "rusult":{
+    "result":{
         "totalMoney":59,
         "list":[
             {
@@ -30,6 +30,6 @@
                 ] 
             }
         ] 
-    }
+    },
     "message":""
 }

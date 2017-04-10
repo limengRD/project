@@ -13,7 +13,7 @@
                 <div class="good_information float_left total">商品信息</div>
                 <div class="unit_price float_left total">单价</div>
                 <div class="good_count float_left total">数量</div>
-                <div class="total_price float_left total">金额</div>
+                <div class="total_price float_left total">总数量</div>
                 <div class="operation float_left total">操作</div>
             </div>
             <div class="goods_list">
@@ -26,14 +26,30 @@
 </template>
 <script>
 import Vue from "vue"
+import VueResource from "vue-resource"
+Vue.use(VueResource)
     export default{ 
         name:"shoppingcart",
          data () {
              return {
                  key:"aaa" ,
-                 goods:{}    
+                 goods:{},
+                 totalMoney:0    
              }
-         }
+         },
+         mounted:function(){
+                this.cartView();
+            },
+         methods:{
+            cartView:function(){
+                var _this = this
+                this.$http.get("/static/cartData.json").then(function(res){
+                              console.log(res)
+                             _this.totalMoney = res.body.result.totalMoney;
+                             console.log(_this.totalMoney)
+                        });
+            }
+        }
   }
  
 </script>
