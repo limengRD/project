@@ -3,6 +3,7 @@
       <top></top> 
       <shopping-cart></shopping-cart>
       <foot></foot>
+      <login></login>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Top from './components/Top' 
 import ShoppingCart from './components/ShoppingCart'
 import Foot from './components/Foot'
+import Login from './components/Login'
 export default {
     name: 'app',
     components: {
         Top,
         ShoppingCart,
-        Foot
+        Foot,
+        Login
     }
 }
 </script>
