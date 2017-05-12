@@ -129,8 +129,8 @@ Vue.use(VueResource)
     .operation{widht:15%;}
     .goods_list ul li{height:20px;width:}
     .ul_goods_list li{height:80px;border:1px solid #cdcdcd;margin-top:30px;}
-    .good_count_input{float:left;width:30px;text-align:center;}
-    .good_count a{user-select:none;padding:0px;float:left;height:19px;line-height:20px;width:20px;background-color:#cdcdcd;text-align:center;box-sizing:border-box;}
+    .good_count_input{float:left;width:30px;text-align:center;height:20px;}
+    .good_count a{user-select:none;padding:0px;float:left;height:20px;line-height:20px;width:20px;background-color:#cdcdcd;text-align:center;box-sizing:border-box;}
     .good_count a:hover{cursor:pointer;border:1px solid red;color:red;}
     .good_count_all{height:20px;margin-top:15px;}
 </style>

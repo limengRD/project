@@ -20,5 +20,5 @@ export default {
 }
 </script>
 <style>
-.comwidth{widht:1200px;margin:0 auto;}
+    .comwidth{width:1200px;margin:0 auto;}
 </style>
